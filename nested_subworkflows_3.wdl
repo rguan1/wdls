@@ -1,4 +1,4 @@
-import "sub2.wdl" as subTwo
+import "https://raw.githubusercontent.com/rguan1/wdls/master/sub2.wdl?token=AE2VPQAMP347FOWU4WJ2BKS5G4TZW" as subTwo
 
 workflow nested_subworkflows_3 {
 

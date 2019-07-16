@@ -1,4 +1,4 @@
-import "sub3.wdl" as subThree
+import "https://raw.githubusercontent.com/rguan1/wdls/master/sub3.wdl?token=AE2VPQHVNAMNG6LJCHE77UC5G4T34" as subThree
 
 task increment {
   Int i
