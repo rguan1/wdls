@@ -1,4 +1,4 @@
-import "sub2.wdl" as subTwo
+import "sub2.wdl" as sub2
 
 task increment {
   Int i
@@ -19,7 +19,7 @@ workflow sub1 {
     call increment { input: i = i }
   }
 
-  call subTwo.sub2 as subN2 { input: it = is }
+  call sub2.sub2 as subN2 { input: it = is }
   output {
     Array[Int] js = increment.j
   }

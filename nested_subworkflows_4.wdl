@@ -1,10 +1,10 @@
-import "sub1.wdl" as subOne
+import "sub1.wdl" as sub1
 
 workflow nested_subworkflows_4 {
 
   Array[Int] ts = range(3)
 
-  call subOne.sub1 as subN1 { input: is = ts }
+  call sub1.sub1 as subN1 { input: is = ts }
 
   output {
     Array[Int] initial = ts

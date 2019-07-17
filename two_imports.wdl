@@ -1,5 +1,5 @@
 import "subworkflow.wdl" as subworkflow
-import "scattergather.wdl" as scatterGatherSubworkflow
+import "scattergather.wdl" as scattergather
 
 workflow two_imports {
 
@@ -9,7 +9,7 @@ workflow two_imports {
   Array[Int] fs = subwfT.js
   call subworkflow.subwf as subwfF { input: is = fs }
 
-  call scatterGatherSubworkflow.scattergather as sg
+  call scattergather.scattergather as sg
 
   output {
     Array[Int] initial = ts
