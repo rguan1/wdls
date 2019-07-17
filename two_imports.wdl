@@ -1,5 +1,5 @@
-import "subworkflow.wdl" as subworkflow
-import "scattergather.wdl" as scattergather
+import "https://raw.githubusercontent.com/rguan1/wdls/master/subworkflow.wdl" as subworkflow
+import "https://raw.githubusercontent.com/rguan1/wdls/master/scattergather.wdl" as scattergather
 
 workflow two_imports {
 
