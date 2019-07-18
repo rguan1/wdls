@@ -1,4 +1,4 @@
-import "https://raw.githubusercontent.com/rguan1/wdls/master/sub3.wdl?token=AE2VPQHVNAMNG6LJCHE77UC5G4T34" as sub2
+import "https://raw.githubusercontent.com/rguan1/wdls/master/sub3.wdl?token=AE2VPQHVNAMNG6LJCHE77UC5G4T34" as sub3
 
 task increment {
   Int i
@@ -19,7 +19,7 @@ workflow sub2 {
     call increment { input: i = i }
   }
 
-  call sub2.sub3 as subN3 {input: iu = it}
+  call sub3.sub3 as subN3 {input: iu = it}
   output {
     Array[Int] js2 = increment.j
   }
