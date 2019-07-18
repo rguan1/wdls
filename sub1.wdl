@@ -1,4 +1,4 @@
-import "sub2.wdl" as sub2
+import "https://raw.githubusercontent.com/rguan1/wdls/master/sub2.wdl" as sub2
 
 task increment {
   Int i

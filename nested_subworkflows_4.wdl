@@ -1,4 +1,4 @@
-import "sub1.wdl" as sub1
+import "https://raw.githubusercontent.com/rguan1/wdls/master/sub1.wdl" as sub1
 
 workflow nested_subworkflows_4 {
 
