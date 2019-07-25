@@ -18,6 +18,7 @@ workflow sub3 {
   }
 
   output {
-    Array[Int] js3 = increment.j
+    Array[Int] sub3Output = increment.j
+
   }
 }

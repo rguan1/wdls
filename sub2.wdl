@@ -21,6 +21,6 @@ workflow sub2 {
 
   call sub3.sub3 as subN3 {input: iu = it}
   output {
-    Array[Int] js2 = increment.j
+    Array[Int] sub2Output = subN3.sub3Output
   }
 }

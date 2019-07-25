@@ -8,6 +8,7 @@ workflow nested_subworkflows_4 {
 
   output {
     Array[Int] initial = ts
-    Array[Int] result = subN1.js
+    Array[Int] result = subN1.sub1Output
   }
 }
+
