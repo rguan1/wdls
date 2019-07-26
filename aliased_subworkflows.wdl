@@ -1,4 +1,4 @@
-import "subworkflow.wdl" as subworkflow
+import "https://raw.githubusercontent.com/rguan1/wdls/master/subworkflow.wdl" as subworkflow
 
 workflow aliased_subworkflows {
 
